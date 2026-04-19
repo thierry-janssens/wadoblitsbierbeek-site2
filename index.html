@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Karateclub Wado Blits Bierbeek – Wado Ryu karate voor iedereen. Trainingen op dinsdag, donderdag en zaterdag in Sporthal De Borre, Bierbeek." />
+  <!-- Content Security Policy – tighten further after launch -->
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; script-src 'self'; frame-src https://www.google.com https://www.youtube.com; connect-src 'self' https://formspree.io;" />
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+  <title>Karateclub Wado Blits Bierbeek</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Favicon: replace with your own -->
+  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+
+<!-- ===== NAVIGATION ===== -->
+<nav class="nav" role="navigation" aria-label="Hoofdnavigatie">
+  <div class="container nav__inner">
+    <a href="index.html" class="nav__brand">
+      <img src="assets/images/logo.jpg"
+           onerror="this.style.display='none'"
+           alt="Wado Blits logo" width="40" height="40" />
+      <span class="nav__brand-name">
+        Wado Blits
+        <span class="nav__brand-sub">Bierbeek</span>
+      </span>
+    </a>
+    <button class="nav__toggle" aria-label="Menu openen/sluiten" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav__links" role="list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="wado-ryu.html">Wado Ryu</a></li>
+      <li><a href="sponsors.html">Sponsors</a></li>
+      <li><a href="about.html">Over ons</a></li>
+      <li class="nav-cta"><a href="about.html#contact">Inschrijven</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<header class="hero" role="banner">
+  <span class="hero__watermark" aria-hidden="true">WADO RYU</span>
+  <div class="container hero__inner">
+    <span class="hero__label">Sporthal De Borre · Bierbeek</span>
+    <h1>
+      Wado Ryu<br />
+      <em>Karate</em>
+    </h1>
+    <p class="hero__sub">
+      Karateclub Wado Blits Bierbeek vzw &mdash; aangesloten bij WIKF. 
+      Voor kinderen en volwassenen, beginners en gevorderden. 
+      Drie proeflessen gratis!
+    </p>
+    <div class="hero__btns">
+      <a href="https://forms.office.com/r/31EUdLusDz" class="btn btn-red"
+         target="_blank" rel="noopener noreferrer">Inschrijvingsformulier</a>
+      <a href="about.html#contact" class="btn btn-outline">Contact opnemen</a>
+    </div>
+  </div>
+</header>
+
+<!-- ===== PROEFLESSEN BANNER ===== -->
+<section class="banner" aria-labelledby="proef-title">
+  <div class="container">
+    <h2 id="proef-title">DRIE PROEFLESSEN GRATIS</h2>
+    <p>Ontdek Wado Ryu karate zonder enige verplichting. 
+       Iedereen is welkom, van 6 jaar tot volwassenen.</p>
+    <div class="banner__btns">
+      <a href="https://forms.office.com/r/31EUdLusDz" class="btn btn-white"
+         target="_blank" rel="noopener noreferrer">Schrijf je in</a>
+      <a href="about.html#contact" class="btn btn-outline">Stel een vraag</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TRAININGSSCHEMA ===== -->
+<section class="section" id="schema" aria-labelledby="schema-title">
+  <div class="container">
+    <span class="section-label">Wekelijks schema</span>
+    <h2 class="section-title" id="schema-title">Trainingstijden</h2>
+    <div class="rule"></div>
+
+    <div class="schedule-grid">
+
+      <!-- DINSDAG -->
+      <article class="schedule-card reveal">
+        <div class="schedule-card__day">Dinsdag</div>
+        <div class="schedule-slot">
+          <div class="schedule-slot__time">18:30 – 20:30</div>
+          <div class="schedule-slot__group">Gevorderden (12+)</div>
+        </div>
+      </article>
+
+      <!-- DONDERDAG -->
+      <article class="schedule-card reveal">
+        <div class="schedule-card__day">Donderdag</div>
+        <div class="schedule-slot">
+          <div class="schedule-slot__time">18:30 – 20:30</div>
+          <div class="schedule-slot__group">Iedereen &mdash; beginners &amp; gevorderden</div>
+        </div>
+      </article>
+
+      <!-- ZATERDAG -->
+      <article class="schedule-card reveal">
+        <div class="schedule-card__day">Zaterdag</div>
+        <div class="schedule-slot">
+          <div class="schedule-slot__time">09:30 – 11:00</div>
+          <div class="schedule-slot__group">Jeugd (&minus;12 j.) t.e.m. 7de Kyu</div>
+        </div>
+        <div class="schedule-slot">
+          <div class="schedule-slot__time">09:00 – 11:00</div>
+          <div class="schedule-slot__group">Gevorderden (v.a. 6de Kyu, 12+)</div>
+        </div>
+        <div class="schedule-slot">
+          <div class="schedule-slot__time">11:00 – 12:00</div>
+          <div class="schedule-slot__group">Volwassenen beginners</div>
+        </div>
+        <div class="schedule-slot">
+          <div class="schedule-slot__time">11:00 – 12:30</div>
+          <div class="schedule-slot__group">Jeugd (&minus;12 j.) t.e.m. 7de Kyu (gevorderd)</div>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="notice mt-4">
+      <strong>Locatie:</strong> Sporthal De Borre &mdash; Speelpleinstraat 10, 3360 Bierbeek
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROMO BLOCKS ===== -->
+<section aria-labelledby="promo-title">
+  <h2 id="promo-title" class="sr-only">Meer informatie</h2>
+  <div class="promo-grid">
+    <!-- Karategi / Webshop -->
+    <div class="promo-card">
+      <span class="promo-card__bg" aria-hidden="true">GI</span>
+      <p class="promo-card__label">Club kledij &amp; uitrusting</p>
+      <h3 class="promo-card__title">Karate Gi, Clubkledij, Sportassen&hellip;</h3>
+      <p class="promo-card__body">Bestel uw clubkledij, karate gi en sporttassen via onze officiële webshop.</p>
+      <a href="https://www.cybertex.store/wadoblits/" class="btn btn-outline"
+         target="_blank" rel="noopener noreferrer">Naar de webshop</a>
+    </div>
+    <!-- WIKF -->
+    <div class="promo-card promo-card--red">
+      <span class="promo-card__bg" aria-hidden="true">WIKF</span>
+      <p class="promo-card__label">Leerschool</p>
+      <h3 class="promo-card__title">Wado International Karate-Do Federation</h3>
+      <p class="promo-card__body">Onze club is aangesloten bij WIKF België onder leiding van Mathieu Beysen 8ste DAN WIKF.</p>
+      <a href="http://www.wikf.be" class="btn btn-white"
+         target="_blank" rel="noopener noreferrer">wikf.be</a>
+    </div>
+    <!-- Info -->
+    <div class="promo-card">
+      <span class="promo-card__bg" aria-hidden="true">?</span>
+      <p class="promo-card__label">Bijkomende informatie</p>
+      <h3 class="promo-card__title">Vragen over onze club?</h3>
+      <p class="promo-card__body">Bekijk onze website of neem direct contact op. We helpen u graag verder.</p>
+      <a href="about.html#contact" class="btn btn-outline">Contacteer ons</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== EVENEMENTEN ===== -->
+<section class="section section--cream" id="evenementen" aria-labelledby="events-title">
+  <div class="container">
+    <span class="section-label">Sportjaar 2025–2026</span>
+    <h2 class="section-title" id="events-title">Komende evenementen</h2>
+    <div class="rule"></div>
+
+    <div class="notice">
+      <strong>Start nieuw sportjaar:</strong> 
+      Di 2 sep 2025 · Za 6 sep 2025 · Zaterdagtrainingen v.a. sep 2025 van 09:00 tot 11:00 voor iedereen.
+    </div>
+
+    <div class="events-list" role="list">
+
+      <div class="event-item reveal" role="listitem">
+        <span class="event-date">Za 27/09</span>
+        <div class="event-name">
+          OPEN WIKF Stage Vlaams-Brabant te Bierbeek
+          <span class="event-group">Stage</span>
+        </div>
+      </div>
+
+      <div class="event-item reveal" role="listitem">
+        <span class="event-date">Za 11/10</span>
+        <div class="event-name">Beker van Kortenberg Kata</div>
+      </div>
+
+      <div class="event-item reveal" role="listitem">
+        <span class="event-date">Zo 19/10</span>
+        <div class="event-name">Belgisch Kampioenschap WIKF</div>
+      </div>
+
+      <div class="event-item reveal" role="listitem">
+        <span class="event-date">21–23/11</span>
+        <div class="event-name">
+          <a href="https://forms.office.com/r/KGgz0ARB31"
+             target="_blank" rel="noopener noreferrer">
+            WIKF Stage Hoeselt o.l.v. Jon Wicks &amp; Mathieu Beysen
+          </a>
+          <span class="event-group">Stage</span>
+        </div>
+      </div>
+
+      <div class="event-item reveal" role="listitem">
+        <span class="event-date">Za 17/01</span>
+        <div class="event-name">Open Limburgse WIKF Stage in Hoeselt</div>
+      </div>
+
+      <div class="event-item reveal" role="listitem">
+        <span class="event-date">Zo 18/01</span>
+        <div class="event-name">Tomodachi Cup Kumite &mdash; Zoutleeuw</div>
+      </div>
+
+      <div class="event-item reveal" role="listitem">
+        <span class="event-date">Za 31/01</span>
+        <div class="event-name">Kyu Graden Examen</div>
+      </div>
+
+      <div class="event-item reveal" role="listitem">
+        <span class="event-date">Zo 01/02</span>
+        <div class="event-name">Pannenkoekenslag 2026 in Opvelp (De Velpe)</div>
+      </div>
+
+      <div class="event-item reveal" role="listitem">
+        <span class="event-date">Zo 08/02</span>
+        <div class="event-name">KCAR Kata Cup in Pelt</div>
+      </div>
+
+      <div class="event-item reveal" role="listitem">
+        <span class="event-date">24–26/04</span>
+        <div class="event-name">WIKF Stage o.l.v. Mathieu Beysen &amp; Angelos Gorgas
+          <span class="event-group">Stage</span>
+        </div>
+      </div>
+
+      <div class="event-item reveal" role="listitem">
+        <span class="event-date">Zo 10/05</span>
+        <div class="event-name">Interclub Katawedstrijd in Lubbeek</div>
+      </div>
+
+      <div class="event-item reveal" role="listitem">
+        <span class="event-date">Za 07/06</span>
+        <div class="event-name">Club BBQ 🎉</div>
+      </div>
+
+      <div class="event-item reveal" role="listitem">
+        <span class="event-date">Za 21/06</span>
+        <div class="event-name">OPEN WIKF Stage Eksel
+          <span class="event-group">Stage</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="mt-6">
+      <h3 style="font-family:var(--font-display);font-size:1.2rem;margin-bottom:12px;">
+        Zomertrainingen Outdoor &mdash; JUL / AUG 2026
+      </h3>
+      <p style="color:var(--muted);font-size:0.93rem;line-height:1.7;">
+        Start: <strong>zaterdag 4 juli 2026</strong><br />
+        Di 18:30–20:00 &bull; Za 09:30–11:00<br />
+        <em>Sportschoenen, eventueel petje en voldoende drank voorzien.</em>
+      </p>
+    </div>
+
+    <div class="mt-4">
+      <a href="https://www.facebook.com/wadoblitsbierbeek"
+         class="btn btn-ink"
+         target="_blank" rel="noopener noreferrer">
+        Volg ons op Facebook
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <img src="assets/images/logo.jpg"
+             onerror="this.style.display='none'"
+             alt="Wado Blits logo" class="footer__logo" />
+        <div class="footer__name">Karateclub Wado Blits Bierbeek vzw</div>
+        <p class="footer__desc">
+          Wado Ryu karate voor iedereen, aangesloten bij de WIKF leerschool.
+          Opgericht 1990 &mdash; Sporthal De Borre, Bierbeek.
+        </p>
+      </div>
+      <div>
+        <p class="footer__head">Navigatie</p>
+        <ul class="footer__links" role="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="wado-ryu.html">Wado Ryu</a></li>
+          <li><a href="sponsors.html">Sponsors</a></li>
+          <li><a href="about.html">Over ons</a></li>
+          <li><a href="about.html#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer__head">Contact</p>
+        <div class="footer__contact">
+          <p>📍 Speelpleinstraat 10, 3360 Bierbeek</p>
+          <p>📞 <a href="tel:+32471013759">+32 471 01 37 59</a></p>
+          <p>✉️ <a href="mailto:contact@wadoblitsbierbeek.be">contact@wadoblitsbierbeek.be</a></p>
+          <p>
+            <a href="https://www.facebook.com/wadoblitsbierbeek"
+               target="_blank" rel="noopener noreferrer">
+              Facebook
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span class="footer__copy">&copy; <span id="yr"></span> Karateclub Wado Blits Bierbeek vzw. Alle rechten voorbehouden.</span>
+      <span class="footer__wikf">Leerschool: <a href="http://www.wikf.be" target="_blank" rel="noopener noreferrer">WIKF — wikf.be</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>document.getElementById("yr").textContent = new Date().getFullYear();</script>
+</body>
+</html>
