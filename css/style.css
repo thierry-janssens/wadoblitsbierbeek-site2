@@ -463,3 +463,34 @@ a { color: inherit; }
   .section  { padding: 56px 0; }
   .hero     { padding: 64px 0 56px; }
 }
+
+/* ================================================================
+   HERO BANNER IMAGE
+   ================================================================ */
+.hero {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/* Dark overlay so text stays readable over the photo */
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(14, 17, 24, 0.82) 0%,
+    rgba(14, 17, 24, 0.55) 60%,
+    rgba(14, 17, 24, 0.25) 100%
+  );
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Make sure text sits above the overlay */
+.hero__watermark,
+.hero__inner {
+  position: relative;
+  z-index: 1;
+}
