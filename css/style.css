@@ -161,7 +161,12 @@ a { color: inherit; }
    HERO
    ================================================================ */
 .hero {
-  background: var(--dark); color: var(--white);
+  background-color: var(--dark);
+  background-image: url('../assets/images/karate_kimono_fighter_sport_fists_banner_2560x1600-2560x800.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: var(--white);
   padding: 90px 0 80px; position: relative; overflow: hidden;
   min-height: 480px; display: flex; align-items: center;
 }
