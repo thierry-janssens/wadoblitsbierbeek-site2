@@ -486,7 +486,7 @@ a { color: inherit; }
   position: absolute;
   inset: 0;
   background: linear-gradient(
-    to right,
+    to left, /* used to be right */
     rgba(14, 17, 24, 0.82) 0%,
     rgba(14, 17, 24, 0.55) 60%,
     rgba(14, 17, 24, 0.25) 100%
