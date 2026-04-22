@@ -497,9 +497,7 @@ a { color: inherit; }
 
 /* Make sure text sits above the overlay */
 
-.hero__watermark,
-.hero__inner {
-  position: relative;
-  z-index: 1;
+.hero__watermark { z-index: 1; }
+.hero__inner     { z-index: 1; }
 }
 
