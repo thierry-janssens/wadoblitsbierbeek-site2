@@ -472,15 +472,15 @@ a { color: inherit; }
 /* ================================================================
    HERO BANNER IMAGE
    ================================================================ */
-/*
+
 .hero {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
-*/
+
 /* Dark overlay so text stays readable over the photo */
-/*
+
 .hero::after {
   content: '';
   position: absolute;
@@ -494,12 +494,12 @@ a { color: inherit; }
   z-index: 0;
   pointer-events: none;
 }
-*/
+
 /* Make sure text sits above the overlay */
-/*
+
 .hero__watermark,
 .hero__inner {
   position: relative;
   z-index: 1;
 }
-*/
+
