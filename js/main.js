@@ -8,7 +8,7 @@
    /* ---- Load shared navigation ----------------------------------- */
   var placeholder = document.getElementById("nav-placeholder");
   if (placeholder) {
-    fetch("/nav.html")
+    fetch("/../nav.html")
       .then(function (res) { return res.text(); })
       .then(function (html) {
         placeholder.innerHTML = html;
