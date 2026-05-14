@@ -5,23 +5,41 @@
 (function () {
   "use strict";
 
-   /* ---- Load shared navigation ----------------------------------- */
+  /* ---- Load shared navigation ----------------------------------- */
   var placeholder = document.getElementById("nav-placeholder");
   if (placeholder) {
-    fetch("/../nav.html")
-      .then(function (res) { return res.text(); })
-      .then(function (html) {
-        placeholder.innerHTML = html;
-        initNav();   // run nav logic after it's inserted
-      })
-      .catch(function () {
-        placeholder.innerHTML = "";  // fail silently
-      });
+    placeholder.innerHTML = getNavHTML();
+    initNav();
   } else {
     initNav();
   }
 
-  function initNav() {
+  function getNavHTML() {
+    return `
+      <nav class="nav" role="navigation" aria-label="Hoofdnavigatie">
+        <div class="container nav__inner">
+          <a href="index.html" class="nav__brand">
+            <img src="assets/images/logo.jpg"
+                 onerror="this.style.display='none'"
+                 alt="Wado Blits logo" width="40" height="40" />
+            <span class="nav__brand-name">
+              Karateclub Wado Blits Bierbeek
+              <span class="nav__brand-sub">Bierbeek</span>
+            </span>
+          </a>
+          <button class="nav__toggle" aria-label="Menu openen/sluiten" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+          <ul class="nav__links" role="list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="wado-ryu.html">Wado Ryu</a></li>
+            <li><a href="sponsors.html">Sponsors</a></li>
+            <li><a href="about.html">Over ons</a></li>
+            <li class="nav-cta"><a href="about.html#contact">Inschrijven</a></li>
+          </ul>
+        </div>
+      </nav>`;
+  }
 
   /* ---- Mobile nav toggle ---------------------------------------- */
   const toggle = document.querySelector(".nav__toggle");
@@ -54,8 +72,6 @@
       }
     });
   })();
-
-} // end initNav
 
   /* ---- Scroll-reveal animation ---------------------------------- */
   const revealEls = document.querySelectorAll(".reveal");
