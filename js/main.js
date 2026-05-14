@@ -5,8 +5,8 @@
 (function () {
   "use strict";
 
-  /* ---- Load shared navigation ----------------------------------- */
-  var placeholder = document.getElementById("nav-placeholder");
+ /* ---- Load shared navigation ----------------------------------- */
+ /*  var placeholder = document.getElementById("nav-placeholder");
   if (placeholder) {
     placeholder.innerHTML = getNavHTML();
     initNav();
@@ -39,7 +39,7 @@
           </ul>
         </div>
       </nav>`;
-  }
+  } */
 
   /* ---- Mobile nav toggle ---------------------------------------- */
   const toggle = document.querySelector(".nav__toggle");
