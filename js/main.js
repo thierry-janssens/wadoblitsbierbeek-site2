@@ -5,6 +5,24 @@
 (function () {
   "use strict";
 
+   /* ---- Load shared navigation ----------------------------------- */
+  var placeholder = document.getElementById("nav-placeholder");
+  if (placeholder) {
+    fetch("/nav.html")
+      .then(function (res) { return res.text(); })
+      .then(function (html) {
+        placeholder.innerHTML = html;
+        initNav();   // run nav logic after it's inserted
+      })
+      .catch(function () {
+        placeholder.innerHTML = "";  // fail silently
+      });
+  } else {
+    initNav();
+  }
+
+  function initNav() {
+
   /* ---- Mobile nav toggle ---------------------------------------- */
   const toggle = document.querySelector(".nav__toggle");
   const navLinks = document.querySelector(".nav__links");
@@ -36,6 +54,8 @@
       }
     });
   })();
+
+} // end initNav
 
   /* ---- Scroll-reveal animation ---------------------------------- */
   const revealEls = document.querySelectorAll(".reveal");
