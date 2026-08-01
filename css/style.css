@@ -389,8 +389,20 @@ a { color: inherit; }
    ================================================================ */
 .grades-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 16px;
+}
+
+@media (max-width: 700px) {
+  .grades-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 450px) {
+  .grades-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .grade-card {
