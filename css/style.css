@@ -385,6 +385,111 @@ a { color: inherit; }
 .wado-card__link::after { content: ' →'; }
 
 /* ================================================================
+   GRADES GRID
+   ================================================================ */
+.grades-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.grade-card {
+  margin: 0;
+  padding: 20px;
+  border-top: 4px solid transparent;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.belt-indicator {
+  width: 32px;
+  height: 8px;
+  border-radius: 2px;
+  margin-bottom: 10px;
+}
+
+.grade-name {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.grade-description {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+/* White */
+.grade-white {
+  border-top-color: #cccccc !important;
+  background: #f9f9f9 !important;
+}
+
+.grade-white .belt-indicator {
+  background: #ffffff;
+  border: 1px solid #bbb;
+}
+
+/* Yellow */
+.grade-yellow {
+  border-top-color: #fbff00 !important;
+  background: #ffffed !important;
+}
+
+.grade-yellow .belt-indicator {
+  background: #fbff00;
+}
+
+/* Orange */
+.grade-orange {
+  border-top-color: #ff6b00 !important;
+  background: #fff5ee !important;
+}
+
+.grade-orange .belt-indicator {
+  background: #ff6b00;
+}
+
+/* Green */
+.grade-green {
+  border-top-color: #308d33 !important;
+  background: #f0faf0 !important;
+}
+
+.grade-green .belt-indicator {
+  background: #4caf50;
+}
+
+/* Blue */
+.grade-blue {
+  border-top-color: #2196f3 !important;
+  background: #eff6ff !important;
+}
+
+.grade-blue .belt-indicator {
+  background: #2196f3;
+}
+
+/* Brown */
+.grade-brown {
+  border-top-color: #8b0000 !important;
+  background: #fdf4f4 !important;
+}
+
+.grade-brown .belt-indicator {
+  background: #8b0000;
+}
+
+/* Black */
+.grade-black {
+  border-top-color: #111111 !important;
+  background: #f2f2f2 !important;
+}
+
+.grade-black .belt-indicator {
+  background: #111111;
+}
+
+/* ================================================================
    BANNER / CTA
    ================================================================ */
 .banner { background: var(--red); color: var(--white); padding: 64px 0; text-align: center; }
